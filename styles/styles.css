@@ -8,6 +8,16 @@ header {
   grid-gap: 10px;
 }
 
+.hidden {
+  position: relative;
+  left: -10000px;
+  top: auto;
+}
+
+.hidden:focus {
+  left: 0;  
+}
+
 nav {
   grid-column: 4 / span 1;
   color: white;
@@ -16,7 +26,8 @@ nav {
 a {
   text-decoration: none;
   color: white;
-  padding: 15px;
+  padding: .5rem;
+  margin: .5rem;
 }
 
 .ul-nav {
